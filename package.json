@@ -1,0 +1,10 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal portfolio site: About, Blog, Resume, Projects.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-blog.js"
+  }
+}
