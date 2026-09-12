@@ -1,3 +1,64 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseURL = "https://example.org/"   # поменяем, когда займёмся деплоем
+locale = "en-us"
+title = "My inner Mongolia"        # название сайта, твоё решение
+theme = "cactus"
+copyright = "Nadya Krasnushkina"
+
+# Верхнее меню. Cactus рисует эти пункты в шапке по возрастанию weight.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 2
+
+[[menu.main]]
+name = "Blog"
+url = "/blog"
+weight = 3
+
+[[menu.main]]
+name = "Projects"
+url = "/projects"
+weight = 4
+
+[[menu.main]]
+name = "Resume"
+url = "/resume"
+weight = 5
+
+[params]
+  colortheme = "white"           # dark, light, white или classic
+  rss = true
+  mainSection = "blog"           # какая папка в content/ считается блогом
+  showAllPostsOnHomePage = false
+  postsOnHomePage = 5            # сколько последних постов показать на главной
+  tagsOverview = true            # блок с облаком тегов
+  showProjectsList = false       # выключаем встроенный виджет проектов, сделаем нормальную страницу
+  dateFormat = "January 2, 2006"
+  description = "Technical writer. Me, my texts, and other animals."  # строка под именем на главной
+  mainSections = ["blog"]      # какие секции показывать в ленте на главной
+  mainSectionTitle = "Blog"    # заголовок блока ленты (по умолчанию "Writings")
+
+
+  [params.comments]
+    enabled = false              # комментарии не нужны
+
+  # Иконки-ссылки в подвале. name это имя иконки Font Awesome (brands).
+  [[params.social]]
+  name = "github"
+  link = "https://github.com/Cluaran3"
+  [[params.social]]
+  name = "linkedin"
+  link = "https://www.linkedin.com/in/nadya-krasnushkina-353248134/"
+  [[params.social]]
+  name = "email"
+  link = "krasnushkina@gmail.com"
+  
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
