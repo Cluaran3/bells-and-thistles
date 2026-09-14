@@ -1,0 +1,15 @@
+.download-button {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+}
+.download-icon {
+  width: 1.5em;
+  height: 1.5em;
+  filter: grayscale(100%);   /* чтобы совпадало по стилю с лого в шапке */
+}
+.download-button:hover .download-icon {
+  filter: none;
+  -webkit-filter: none;
+}

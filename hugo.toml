@@ -38,10 +38,11 @@ weight = 5
   postsOnHomePage = 5            # сколько последних постов показать на главной
   tagsOverview = true            # блок с облаком тегов
   showProjectsList = false       # выключаем встроенный виджет проектов, сделаем нормальную страницу
-  dateFormat = "January 2, 2006"
+  dateFormat = "January 02, 2006"
   description = "Technical writer. Me, my texts, and other animals."  # строка под именем на главной
   mainSections = ["blog"]      # какие секции показывать в ленте на главной
   mainSectionTitle = "Blog"    # заголовок блока ленты (по умолчанию "Writings")
+  css = ["css/custom.css"]
 
 
   [params.comments]

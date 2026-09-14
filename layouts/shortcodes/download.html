@@ -1,0 +1,9 @@
+{{ $file := .Page.Resources.GetMatch (.Get 0) }}
+{{ if $file }}
+  <a class="download-button" href="{{ $file.RelPermalink }}">
+    <img src="{{ "images/logo-download.png" | relURL }}" alt="" class="download-icon">
+    {{ .Get 1 }}
+  </a>
+{{ else }}
+  {{ errorf "download shortcode: file %q not found next to %s" (.Get 0) .Page.File.Path }}
+{{ end }}
