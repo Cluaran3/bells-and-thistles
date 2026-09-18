@@ -13,3 +13,14 @@
   filter: none;
   -webkit-filter: none;
 }
+
+/* Blog list: keep the date column a fixed width so it doesn't shrink
+   (and wrap unpredictably) when a neighboring post title is long enough
+   to need two lines. */
+#archive .post-list .post-item .meta {
+  flex-shrink: 0;
+}
+#archive .post-list .post-item span {
+  flex: 1 1 auto;
+  min-width: 0;
+}
