@@ -7,7 +7,7 @@
 .download-icon {
   width: 1.5em;
   height: 1.5em;
-  filter: grayscale(100%);   /* чтобы совпадало по стилю с лого в шапке */
+  filter: grayscale(100%);   /* matches the grayscale header logo */
 }
 .download-button:hover .download-icon {
   filter: none;
@@ -17,10 +17,12 @@
 /* Blog list: keep the date column a fixed width so it doesn't shrink
    (and wrap unpredictably) when a neighboring post title is long enough
    to need two lines. */
-#archive .post-list .post-item .meta {
+#archive .post-list .post-item .meta,
+#writing .post-list .post-item .meta {
   flex-shrink: 0;
 }
-#archive .post-list .post-item span {
+#archive .post-list .post-item span,
+#writing .post-list .post-item span {
   flex: 1 1 auto;
   min-width: 0;
 }
