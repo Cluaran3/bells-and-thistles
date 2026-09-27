@@ -1,19 +1,14 @@
-baseURL = "https://example.org/"   # поменяем, когда займёмся деплоем
+baseURL = "https://bellsandthistl.es/"
 locale = "en-us"
-title = "My inner Mongolia"        # название сайта, твоё решение
+title = "Bells and Thistles"
 theme = "cactus"
-copyright = "Nadya Krasnushkina"
+copyright = "Bells and Thistles"
 
-# Верхнее меню. Cactus рисует эти пункты в шапке по возрастанию weight.
+# Main menu. Cactus sorts items by weight.
 [[menu.main]]
 name = "Home"
 url = "/"
 weight = 1
-
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 2
 
 [[menu.main]]
 name = "Blog"
@@ -31,24 +26,22 @@ url = "/resume"
 weight = 5
 
 [params]
-  colortheme = "white"           # dark, light, white или classic
+  colortheme = "white"           # dark, light, white, or classic
   rss = true
-  mainSection = "blog"           # какая папка в content/ считается блогом
+  mainSection = "blog"           # target of the "Blog" heading link on the home page
   showAllPostsOnHomePage = false
-  postsOnHomePage = 5            # сколько последних постов показать на главной
-  tagsOverview = true            # блок с облаком тегов
-  showProjectsList = false       # выключаем встроенный виджет проектов, сделаем нормальную страницу
+  postsOnHomePage = 5
+  tagsOverview = true
+  showProjectsList = false       # Projects is a standalone page, not the theme's data-driven widget
   dateFormat = "January 02, 2006"
-  description = "Technical writer. Me, my texts, and other animals."  # строка под именем на главной
-  mainSections = ["blog"]      # какие секции показывать в ленте на главной
-  mainSectionTitle = "Blog"    # заголовок блока ленты (по умолчанию "Writings")
+  mainSections = ["blog"]        # sections listed in the home page feed
+  mainSectionTitle = "Blog"
   css = ["css/custom.css"]
 
-
   [params.comments]
-    enabled = false              # комментарии не нужны
+    enabled = false
 
-  # Иконки-ссылки в подвале. name это имя иконки Font Awesome (brands).
+  # Social links. `name` must match a Font Awesome brand icon; "email" is handled separately.
   [[params.social]]
   name = "github"
   link = "https://github.com/Cluaran3"
@@ -58,7 +51,7 @@ weight = 5
   [[params.social]]
   name = "email"
   link = "krasnushkina@gmail.com"
-  
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
