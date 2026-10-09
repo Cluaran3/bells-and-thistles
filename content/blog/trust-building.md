@@ -1,0 +1,16 @@
++++
+date = '2026-10-09T00:27:44+03:00'
+draft = false
+title = 'Houston, We Have a Trust Issue: Reviewing AI Drafts vs. Human Ones'
++++
+As technical writers are rapidly and inevitably moving toward the role of curators of AI-generated content, the question arises: does a review process for an AI-authored draft drastically differ from the usual peer review? Having spent the last month in the company of a bunch of agents, I can say with confidence: oh boy, does it.
+
+First, remember to lower your expectations for consistency. Working in a small team with human beings, you quickly learn what to expect from whom. Yeah, no one is immune to occasional typos, small inconsistencies, or wishy-washy wording; and some people are more at home in certain domains than others. That's exactly why we have peer review. However, a given professional writer's texts leave roughly the same impression every time. The only time a seasoned colleague's work surprised me with unexpectedly low quality, it turned out to be a version control issue: developers had carelessly overwritten the changes with their own pushes.
+
+Consistency, though, is not a virtue you can expect from an LLM, which is probabilistic by nature and operates within a limited context window, at least not without a full arsenal of harnesses and evals fine-tuned for a specific model (which will be superseded by a new major version in a month or two). So the quality of output will vary, sometimes substantially. Don't let a couple of good (or "good enough") results lull you into a false sense of security. Better yet, automate your vigilance as much as possible with a set of deterministic rules.
+
+Second, you need to change your lens. If you are an experienced editor, you know what it looks like when a person is guessing rather than knowing. Uncertainty usually gives itself away through vague, muddled phrasing or sudden gaps that break the rhythm and logic of the prose. Forget it. AI will state any nonsense with a level of confidence every career politician would envy. So no, don't trust your pattern recognition or your gut. Check every claim against the source of truth, no matter how polished it looks.
+
+If it sounds a bit paranoid, well, it is. You have a brilliant aide, always at hand, who can boost your abilities and save you an enormous amount of time, except you can't trust them. So the time you saved by delegating the writing to AI (along with the creative part of the job), you'll most likely spend scrutinizing their output, which keeps piling up in your backlog day after day. For those of us who actually enjoyed writing, that's not only sad, it's a devastating professional change.
+
+The only way out I can imagine is building trust. Not in the pop-psychology sense of the word, of course, but literally building it as an engineer. Build your tools, context layers, evals, and information architecture around the agent to maintain transparency and consistency as much as possible. Not many technical writers can boast this skill set yet, but it's a direction worth taking. Becoming a content (or "context") engineer looks to me like a chance to rethink the creative part of the job and stay current while keeping the domain knowledge. But of course, you can always find solace in pulling AI drafts to pieces and publicly moaning about AI slop.
