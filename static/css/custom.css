@@ -20,6 +20,7 @@
 #archive .post-list .post-item .meta,
 #writing .post-list .post-item .meta {
   flex-shrink: 0;
+  width: 18ch;
 }
 #archive .post-list .post-item span,
 #writing .post-list .post-item span {
