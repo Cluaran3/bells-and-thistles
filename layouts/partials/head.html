@@ -25,7 +25,7 @@
 
   {{- $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" "true") -}}
   {{- $styles := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "scss/style.scss" . | css.Sass $options | resources.Fingerprint "sha512" }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}"> 
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
 
   <!-- Custom CSS -->
   {{ range .Site.Params.css }} <link rel="stylesheet" href="{{ . | absURL }}"> {{ end }}
@@ -42,7 +42,8 @@
     {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
   {{ end }}
   {{ end }}
-  {{ with site.Config.Services.GoogleAnalytics.ID }}
-    {{ template "_internal/google_analytics.html" $ }}
+  {{ with site.Params.goatcounter }}
+  <script data-goatcounter="https://{{ . }}.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
   {{ end }}
 </head>

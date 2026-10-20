@@ -37,6 +37,7 @@ weight = 5
   mainSections = ["blog"]        # sections listed in the home page feed
   mainSectionTitle = "Blog"
   css = ["css/custom.css"]
+  goatcounter = "bells-n-thistles"   # GoatCounter site code; remove to disable analytics
 
   [params.comments]
     enabled = false
